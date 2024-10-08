@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaOto</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">AlphaOto</a>
+            <nav class="space-x-4">
+                <a href="#home" class="text-gray-600 hover:text-blue-500">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-blue-500">Gallery</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-[85vh]" style="background-image: url('DSC04605.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome to AlphaOto</h1>
+            <p class="text-xl mb-8">High-quality automotive photography services</p>
+            <a href="#about-me" class="bg-white text-blue-600 py-3 px-6 rounded-full font-bold hover:bg-gray-100 transition">Learn More</a>
+        </div>
+    </section>
+
+        <!-- About Me Section -->
+    <section id="about-me" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Foto Profil -->
+                <div class="w-full md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <img src="PP-IG.png" alt="Profile Photo" class="rounded-full shadow-lg w-64 h-64 object-cover">
+                </div>
+
+                <!-- Judul dan Deskripsi Sejajar -->
+                <div class="w-full md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center">
+                        <h2 class="text-4xl font-bold mr-4">About Me</h2>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-lg text-gray-700 leading-relaxed line-clamp-4">
+                            Hello! I am a professional automotive photographer with over 5 years of experience. My goal is to deliver high-quality and artistic visuals that meet the needs of my clients, whether for commercial purposes, personal collections, or publication in automotive magazines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Features) -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Gallery</h2>
+
+            <!-- Swiper Slider -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="DSC04595-Enhanced-NR.jpg" alt="Photo 1" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04600.jpg" alt="Photo 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04613.jpg" alt="Photo 3" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04619.jpg  " alt="Photo 4" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04636.jpg" alt="Photo 4" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04637.jpg" alt="Photo 4" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="DSC04638.jpg" alt="Photo 4" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Add Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-grey-500">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-left mb-2 font-semibold">Your Name</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left mb-2 font-semibold">Your Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left mb-2 font-semibold">Your Message</label>
+                    <textarea id="message" class="w-full p-3 border border-gray-300 rounded-lg" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-full font-bold hover:bg-blue-500 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 AlphaOto. All rights reserved.</p>
+            <div class="space-x-4 mt-2">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
